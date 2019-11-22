@@ -1,0 +1,8 @@
+<footer class="{{ .Site.Params.background_color_class | default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+      <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ .Name }} page">
+          {{ .Name }}
+      </a>
+    <div>{{ partial "social-follow.html" . }}</div>
+  </div>
+</footer>

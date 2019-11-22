@@ -1,0 +1,33 @@
+.argo, .grafana, .jaeger, .kiali, .prometheus {
+  fill: #BABABA;
+}
+
+.new-window {
+  opacity: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+.link-transition:hover .new-window{
+  opacity: 1;
+}
+
+.argo:hover {
+  fill: #3b5998;
+}
+
+.grafana:hover {
+  fill: #1da1f2;
+}
+
+.jaeger:hover {
+  fill: #e1306c;
+}
+
+.kiali:hover {
+  fill: #cd201f;
+}
+
+.prometheus:hover {
+  fill: #6cc644;
+}
+

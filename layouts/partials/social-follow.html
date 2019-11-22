@@ -1,0 +1,33 @@
+<!-- TODO: Add follow intents where available TODO: Revisit color and hover color -->
+{{ $icon_size := "64px" }}
+{{ with .Param "argo" }}
+<a href="{{ . }}" target="_blank" class="link-transition argo link dib z-999 pt3 pt0-l mr1" title="argo link" rel="noopener" aria-label="follow on argo——Opens in a new window">
+    {{ partial "svg/argo.svg" (dict "size" $icon_size) }}
+    {{- partial "new-window-icon.html" . -}}
+</a>
+{{ end }}
+{{ with .Param "grafana" }}
+<a href="{{ . }}" target="_blank" class="link-transition grafana link dib z-999 pt3 pt0-l mr1" title="grafana link" rel="noopener" aria-label="follow on grafana——Opens in a new window">
+  {{ partial "svg/grafana.svg" (dict "size" $icon_size) }}
+  {{- partial "new-window-icon.html" . -}}
+</a>
+{{ end }}
+{{ with .Param "jaeger" }}
+<a href="{{ . }}" target="_blank" class="link-transition jaeger link dib z-999 pt3 pt0-l mr1" title="jaeger link" rel="noopener" aria-label="follow on jaeger——Opens in a new window">
+  {{ partial "svg/jaeger.svg" (dict "size" $icon_size) }}
+  {{- partial "new-window-icon.html" . -}}
+</a>
+{{ end }}
+{{ with .Param "kiali" }}
+<a href="{{ . }}" target="_blank" class="link-transition kiali link dib z-999 pt3 pt0-l mr1" title="kiali link" rel="noopener" aria-label="follow on kiali——Opens in a new window">
+  {{ partial "svg/kiali.svg" (dict "size" $icon_size) }}
+  {{- partial "new-window-icon.html" . -}}
+</a>
+{{ end }}
+{{ with .Param "prometheus" }}
+<a href="{{ . }}" target="_blank" class="link-transition prometheus link dib z-999 pt3 pt0-l mr1" title="prometheus link" rel="noopener" aria-label="follow on prometheus——Opens in a new window">
+  {{ partial "svg/prometheus.svg" (dict "size" $icon_size) }}
+  {{- partial "new-window-icon.html" . -}}
+</a>
+{{ end }}
+
